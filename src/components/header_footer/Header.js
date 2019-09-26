@@ -7,10 +7,14 @@ import SideDrawer from "./SideDrawer";
 
 class Header extends Component {
 
-    state = {
-        drawerOpen: false,
-        headerShow: false
+    constructor(){
+        super();
+        this.state = {
+            drawerOpen: false,
+            headerShow: false
+        }
     }
+
 
     toggleDrawer = (value) => {
         this.setState({
